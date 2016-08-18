@@ -3,19 +3,28 @@
 <head>
 	<title>Dice Game</title>
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/index.js"></script>
-	<script src="jquery-2.2.4.min.map"></script>
 </head>
 <body>
-	<div id="intro">
+	<div id="intro" hidden="true">
 		<h1>Welcome to the dice game</h1>
 		<button id="play">Play</button>
 		<button id="turtorial">Turtorial</button>
-		<div id="chooseGameMode" hidden="true">
-			<h1>Choose the game mode...</h1>
-			<button>One player</button>
-			<button>Two players</button>
-		</div>
 	</div>
+
+	<div id="chooseGameMode" hidden="true">
+		<h1>Choose the game mode...</h1>
+		<button id="onePlayer">One player</button>
+		<button id="twoPlayer">Two players</button>
+	</div>
+		
+	<div id="strOne" hidden="true">
+		<p>What is your name?</p>
+		<input type="text" id="username">
+		<button id="playOne" onClick="name()">Play</button>
+	<div>
+
 </body>
 </html>
